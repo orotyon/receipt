@@ -2,13 +2,13 @@
 <html lang="ja">
     <head>
         <meta charaset="UTF-8">
+        <title>家計簿 - 登録 - </title>
         <meta name="description" content="家計簿">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>家計簿 - top - </title>
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" href="styles/common-style.css">
         <script type="module" src="./scripts/firebase-init.js"></script>
         <script type="module" src="./scripts/login.js"></script>
+        <script type="module" src="./scripts/register.js"></script>
     </head>
 
     <body>
@@ -32,9 +32,14 @@
                     <li><a href="#" type="button" class="button" onclick="logout()">ログアウト</a></li>
                 </ul>
             </div>
-    </header>
+        </header>
 
-    <h1 class="title">トップ画面</h1>
+        <h1 class="title">登録画面</h1>
 
+        <div class="wrapper content register">
+            品名<input type="text" id="name">
+            金額<input type="number" id="amount" class="amount">
+            <input type="button" value="登録"  class="add" onclick="btnAdd()">
+        </div>
     </body>
 </html>

@@ -2,13 +2,13 @@
 <html lang="ja">
     <head>
         <meta charaset="UTF-8">
+        <title>家計簿 - 参照 - </title>
         <meta name="description" content="家計簿">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>家計簿 - top - </title>
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" href="styles/common-style.css">
         <script type="module" src="./scripts/firebase-init.js"></script>
         <script type="module" src="./scripts/login.js"></script>
+        <script type="module" src="./scripts/view.js"></script>
     </head>
 
     <body>
@@ -32,9 +32,17 @@
                     <li><a href="#" type="button" class="button" onclick="logout()">ログアウト</a></li>
                 </ul>
             </div>
-    </header>
+        </header>
+        <h1 class="title">参照画面</h1>
 
-    <h1 class="title">トップ画面</h1>
+        <div class="wrapper content reference">
+            <table id="output">
+                <tr>
+                    <th>品名</th><th>金額</th>
+                </tr>
+            </table>
+
+        </div>
 
     </body>
 </html>

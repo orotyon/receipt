@@ -1,0 +1,86 @@
+/* -------------------------------
+    共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+.title{
+    font-size:4rem;
+    text-align: center;
+}
+
+.wrapper{
+    /* 割合にするのは要対応 */
+    background-color: beige;
+    height: 80vh;
+}
+.content{
+    /* わかりやすさのため変な色 */
+    background-color:lightblue;
+    margin-left:5vw;
+    margin-right:5vw;
+    padding-top: 1vh;
+    padding-left: 1vh;
+}
+
+
+
+/* -------------------------------
+    メニュー部分
+------------------------------- */
+header{
+    color: #FFFFcc;
+    font-size:2rem;
+    background-color:darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 5vh;
+}
+header a{
+    color: #FFFFcc;
+}
+header ul{
+    display:flex;
+    list-style: none;
+}
+header .header-left li{
+    margin-left: 20px;
+}
+header .header-right li{
+    margin-right: 20px;
+}
+header img{
+    max-height: 2rem;
+    vertical-align:middle;
+}
+
+/* -------------------------------
+    登録部分
+------------------------------- */
+.register input{
+    background-color: white;
+}
+.register input.amount{
+    text-align: right;
+}
+.register input.add{
+    background-color:honeydew
+}
+
+/* -------------------------------
+    参照部分
+------------------------------- */
+.reference table{
+    background-color: lightcoral;
+}
+.reference tr:hover {
+    background-color: gray;
+}
