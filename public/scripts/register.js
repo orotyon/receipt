@@ -5,7 +5,7 @@ const registerAmount = document.getElementById("amount");
 
 const db = getFirestore();
 // エミュレーター向けの設定
-connectFirestoreEmulator(db, 'localhost', 8080);
+// connectFirestoreEmulator(db, 'localhost', 8080);
 
 async function btnAdd(){
 // Add a new document with a generated id.

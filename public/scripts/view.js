@@ -6,7 +6,7 @@ const table = document.getElementById( 'output' );
 
 const db = getFirestore();
 // エミュレーター向けの設定
-connectFirestoreEmulator(db, 'localhost', 8080);
+// connectFirestoreEmulator(db, 'localhost', 8080);
 
 
 async function reference(){
